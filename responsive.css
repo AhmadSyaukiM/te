@@ -1,0 +1,56 @@
+@media (max-width: 1190px) {
+    body {
+        background-color: #090017;
+    }
+    .layer {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 100%;
+        height: 700px;
+        background-position: center;
+        object-fit: cover;
+        position: relative;
+        z-index: 2; /* Background layer */
+    }
+
+    .header {
+        position:absolute;
+    height: 100vh;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+        
+    }
+
+   
+
+
+/* Additional CSS for better structure */
+}
+
+@media (max-width: 374px) {
+    /* body {
+        background-color: blue;
+    } */
+  
+   
+
+    .layer img{
+        background-color: red;
+        filter: brightness(100%);
+    }
+
+    .layer {
+        margin-top: -10rem;
+    }
+
+    .header {
+        position: absolute;
+        top: -16rem;
+    }
+    
+
+}

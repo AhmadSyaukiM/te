@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 3D Parallax Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="bg-white bg-opacity-0 backdrop-blur-md shadow-md z-10 fixed top-0 left-0 right-0">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative z-50">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Syauki</span>
+      </a>
+      <button id="menu-button" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg id="menu-icon" class="w-5 h-5 transition-transform transform text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+          <svg id="close-icon" class="w-5 h-5 hidden transition-transform transform text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-transparent text-white">
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover">Education</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover">Skill</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover">Project</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 relative neon-hover">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header>
+
+  
+    <div class="container">
+     
+<!-- navbar  -->
+<div class="relative overflow-hidden flex justify-center items-center h-screen">
+  <video class="min-w-full min-h-full w-auto h-auto object-cover translate-up bgr" muted loop autoplay>
+      <source src="/img/blackhole.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<div class="absolute inset-x-0 top-0 z-5 text-center mt-44">
+  <p class="text-8xl font-montserrat gradient-text p">Hi</p>
+  <span class="text-8xl gradient-text block font-montserrat ">I'm Ahmad Syauki</span>
+  <span class="text-2xl font-montserrat block mt-4 wel">Welcome to my portfolio website guys. Enjoy it!</span>
+</div>
+
+<div class="absolute inset-x-0 bottom-0 flex text-center justify-center mb-32">
+  <a href="https://tailwindcss.com/docs/margin" class="z-40 justify-center font-montserrat butt" onclick="navigate()">For More..</a>
+</div>
+
+
+
+<div class="social absolute bottom-4 md:bottom-8 left-0 right-0 flex justify-center mt-4 z-10">
+  <div class="grid grid-cols-4 gap-4">
+      <!-- Instagram -->
+      <a href="http://127.0.0.1:5500/index.html" class="flex justify-center items-center w-12 h-12  rounded-full cursor-pointer">
+          <i class="fab fa-instagram text-white text-2xl ins "></i>
+      </a>
+      <!-- WhatsApp -->
+      <a href="#" class="flex justify-center items-center w-12 h-12 bg-green-500 rounded-full">
+          <i class="fab fa-whatsapp text-white text-2xl"></i>
+      </a>
+      <!-- Facebook -->
+      <a href="#" class="flex justify-center items-center w-12 h-12 bg-blue-500 rounded-full">
+          <i class="fab fa-facebook text-white text-2xl"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="#" class="flex justify-center items-center w-12 h-12 bg-blue-800 rounded-full">
+          <i class="fab fa-linkedin text-white text-2xl"></i>
+      </a>
+  </div>
+</div>
+
+
+    <!-- close nav -->
+   
+
+
+      <img class="layer" src="/img/fog_2.png" alt="image description">
+   
+  </div>
+</header>
+
+<main>
+  <!-- <video muted loop autoplay>
+    <source src="/img/cards-video.mp4" type="video/mp4">
+  </video>
+   -->
+</main>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="main.js" defer></script>
+  <script src="button.js"></script>
+
+  <script>
+
+    
+
+document.getElementById('menu-button').addEventListener('click', function() {
+    const menu = document.getElementById('navbar-default');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const menuLinks = menu.querySelectorAll('a');
+
+    menu.classList.toggle('hidden');
+    if (menu.classList.contains('hidden')) {
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      menuIcon.classList.add('rotate-out');
+      closeIcon.classList.remove('rotate-in');
+    } else {
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      menuIcon.classList.remove('rotate-out');
+      closeIcon.classList.add('rotate-in');
+      menuLinks.forEach(link => {
+        link.classList.add('slide-down');
+      });
+    }
+  });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  let container = document.querySelector('.container');
+  let layers = document.querySelectorAll('.layer');
+
+  container.addEventListener('mousemove', (e) => {
+    let X = e.pageX;
+    let Y = e.pageY;
+
+    layers[0].style.transform = `translate(${X / 200*1}px, ${Y / 80 *-1}px)`;
+   
+  });
+});
+
+
+
+
+
+
+
+</script>
+  </script>
+   <!--  link tailwind  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- link flowbite -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://kit.fontawesome.com/2e41153088.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

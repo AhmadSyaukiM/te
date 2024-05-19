@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+/* General reset and prevent horizontal scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.butt {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+
+.layer {
+  margin-top: -30rem;
+}
+
+.neon-hover:hover {
+  transition: 0.5s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f;
+}
+
+.neon-hover:focus {
+  text-shadow: none; /* Atur teks shadow menjadi none saat di klik */
+}
+
+.font-montserrat {
+  font-weight: bold;
+  color: rgb(232, 232, 232);
+}
+
+.p {
+  background: linear-gradient(to bottom right, #6316e8, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wel {
+  color: rgb(222, 222, 222);
+}
+
+
+
+/* Untuk efek hover */
+.social a:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Untuk efek transisi */
+.social  {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.social a {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.social a:hover {
+  transition: 0.5s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f;
+}
+
+
+
+.butt {
+  
+  position: relative;
+  padding: 10px 32px;
+  border-radius: 6px;
+  border: solid white 2px;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #c497ff00;
+  transition: all 0.2s ease;
+}
+.butt:active {
+  text-shadow: 0 0 5px #fff, 0 0 52px #fff, 0 0 50px #fff, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f;
+
+  transform: scale(0.96);
+  
+}
+
+
+
+
+
+
+.butt:before,
+.butt:after {
+  
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.butt.animate::before {
+  
+  top: -70%;
+  
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.butt.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+
+}
+
+body {
+  background-color: #040015;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 1000rem;
+    overflow-x: hidden;
+}
+
+.layer img {
+  margin: 0;
+  padding: 0;
+  filter:blur(3px);
+}
+
+/* Container for the layers */
+.container {
+    padding: 0 0 0 -1%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+  position: relative; /* Ensure container is the reference for positioning children */
+}
+
+
+
+.bgr {
+  margin-top: -29em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar animation */
+  @keyframes rotateIn {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+  @keyframes rotateOut {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .rotate-in {
+    animation: rotateIn 0.5s forwards;
+  }
+  .rotate-out {
+    animation: rotateOut 0.3s forwards;
+  }
+  .slide-down {
+    animation: slideDown 0.7s ease-out forwards;
+  }
